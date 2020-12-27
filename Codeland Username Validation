@@ -15,6 +15,11 @@ Output: false
 Input: "u__hello_world123" 
 Output: true
 
+Tags:
+Regular Expression
+Searching
+String Manipulation
+
 Python: 
 import re
 def CodelandUsernameValidation(strParam):
