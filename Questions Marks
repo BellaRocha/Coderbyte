@@ -11,9 +11,9 @@ Input: "acc?7??sss?3rr1??????5"
 Output: true
 
 Tags:
-String Manipulation
-Searching 
 Hash Table
+Searching 
+String Manipulation
 
 Python:
 import re 
