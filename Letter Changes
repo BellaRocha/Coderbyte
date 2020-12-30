@@ -16,11 +16,14 @@ def LetterChanges(strParam):
   i = 0
   vowels = ['a', 'e', 'i', 'o', 'u']
   new_string = ""
+  char = ''
   for i in range (len(strParam)):
     if (strParam[i].isalpha()):
-      new_string += (chr(ord(strParam[i]) + 1))
-      if (strParam[i] in vowels):
-        new_string += (strParam[i].upper())
+      letter = (chr(ord(strParam[i]) + 1))
+      if (letter in vowels):
+        new_string += (letter.upper())
+      else:
+        new_string += letter
     else:
       new_string += strParam[i]
 
