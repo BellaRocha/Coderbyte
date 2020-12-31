@@ -20,13 +20,13 @@ def FindIntersection(strArr):
   for i in range (0, len(first_list)):
     for j in range (0, len(second_list)):
       if first_list[i] == second_list[j]:
-        intersect = intersect + first_list[i] + ", "
+        intersect = intersect + first_list[i] + ","
         break
     
   if intersect == "":
     return "false"
   else:
-    return intersect[0:-2]
+    return intersect[0:-1]
 
 # keep this function call here 
 print FindIntersection(raw_input())
