@@ -30,12 +30,13 @@ def QuestionsMarks(strParam):
       i += 1
       while strEdit[i] == '?':
         q_value += 1
+        if (i == len(strEdit) - 1):
+          return "false"
         i += 1
       if q_value == 3:
         second_num = float(strEdit[i])
         if first_num + second_num == 10.0:
           pair_found += 1
-          i += 1
       elif q_value < 3 or q_value > 3:
         second_num = float(strEdit[i])
         if first_num + second_num == 10.0:
@@ -45,7 +46,6 @@ def QuestionsMarks(strParam):
   if pair_found > 0:
     return "true"
   return "false"
-
 
 # keep this function call here 
 print QuestionsMarks(raw_input())
