@@ -23,12 +23,10 @@ print LetterCapitalize(raw_input())
 def LetterCapitalize(strParam):
   list_str = strParam.split(' ')
   string_updated = ""
-  final = ""
   for i in range (len(list_str)):
     string_updated += list_str[i].capitalize() + ' '
 
-  final = string_updated[:-1]
-  return final
+  return string_updated[:-1]
 
 # keep this function call here 
 print LetterCapitalize(raw_input())
