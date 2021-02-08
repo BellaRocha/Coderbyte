@@ -23,7 +23,6 @@ def CoinDeterminer(num):
   while True:
     count_coins += 1
     for c in itertools.combinations_with_replacement(coins, count_coins):
-      print(c)
       if sum(c) == int(num):
         return count_coins
 
